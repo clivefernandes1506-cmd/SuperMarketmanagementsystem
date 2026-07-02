@@ -34,7 +34,7 @@ namespace SuperMarketmanagementsystem.Services
             _context.SaveChanges();
         }
     }
-}
+}// supplier service done
 
 
 
