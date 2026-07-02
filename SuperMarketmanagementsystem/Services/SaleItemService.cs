@@ -23,4 +23,4 @@ namespace SuperMarketmanagementsystem.Services
             return _context.SaleItems.ToList();
         }
     }
-}
+}//sale item service done
