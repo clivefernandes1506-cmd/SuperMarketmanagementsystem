@@ -46,4 +46,4 @@ public class StockService
     {
         return _context.Stocks.FirstOrDefault(s => s.ProductID == productId);
     }
-}
+}// stock service done
