@@ -30,7 +30,7 @@
             ((System.ComponentModel.ISupportInitialize)dgvStock).BeginInit();
             SuspendLayout();
 
-            // label1
+           
             label1.AutoSize = true;
             label1.Location = new Point(22, 58);
             label1.Name = "label1";
@@ -38,7 +38,7 @@
             label1.TabIndex = 0;
             label1.Text = "Product";
 
-            // btnAdd
+            
             btnAdd.Location = new Point(411, 58);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(150, 46);
@@ -47,7 +47,7 @@
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
 
-            // button2
+           
             button2.Location = new Point(962, 130);
             button2.Name = "button2";
             button2.Size = new Size(8, 8);
@@ -55,7 +55,7 @@
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
 
-            // btnDelete
+            
             btnDelete.Location = new Point(760, 58);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(150, 46);
@@ -64,7 +64,7 @@
             btnDelete.UseVisualStyleBackColor = true;
             btnDelete.Click += btnDelete_Click;
 
-            // btnUpdate
+            
             btnUpdate.Location = new Point(579, 58);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(159, 46);
@@ -73,7 +73,7 @@
             btnUpdate.UseVisualStyleBackColor = true;
             btnUpdate.Click += btnUpdate_Click;
 
-            // dgvStock
+            
             dgvStock.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvStock.Location = new Point(12, 357);
             dgvStock.Name = "dgvStock";
@@ -82,7 +82,7 @@
             dgvStock.TabIndex = 6;
             dgvStock.CellClick += dgvStock_CellClick;
 
-            // label2
+            
             label2.AutoSize = true;
             label2.Location = new Point(22, 106);
             label2.Name = "label2";
@@ -90,20 +90,20 @@
             label2.TabIndex = 7;
             label2.Text = "Quantity";
 
-            // cmbProduct
+            
             cmbProduct.FormattingEnabled = true;
             cmbProduct.Location = new Point(124, 58);
             cmbProduct.Name = "cmbProduct";
             cmbProduct.Size = new Size(194, 40);
             cmbProduct.TabIndex = 8;
 
-            // txtQuantity
+           
             txtQuantity.Location = new Point(134, 106);
             txtQuantity.Name = "txtQuantity";
             txtQuantity.Size = new Size(200, 39);
             txtQuantity.TabIndex = 9;
 
-            // StockForm
+           
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1749, 785);
