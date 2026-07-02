@@ -31,7 +31,7 @@
             ((System.ComponentModel.ISupportInitialize)dgvSuppliers).BeginInit();
             SuspendLayout();
 
-            // label1
+            
             label1.AutoSize = true;
             label1.Location = new Point(41, 73);
             label1.Name = "label1";
@@ -39,13 +39,13 @@
             label1.TabIndex = 0;
             label1.Text = "Supplier Name";
 
-            // txtSupplierName
+            
             txtSupplierName.Location = new Point(211, 73);
             txtSupplierName.Name = "txtSupplierName";
             txtSupplierName.Size = new Size(200, 39);
             txtSupplierName.TabIndex = 1;
 
-            // label2
+            
             label2.AutoSize = true;
             label2.Location = new Point(41, 135);
             label2.Name = "label2";
@@ -53,13 +53,13 @@
             label2.TabIndex = 2;
             label2.Text = "Phone";
 
-            // txtPhone
+            
             txtPhone.Location = new Point(211, 135);
             txtPhone.Name = "txtPhone";
             txtPhone.Size = new Size(200, 39);
             txtPhone.TabIndex = 3;
 
-            // label3
+            
             label3.AutoSize = true;
             label3.Location = new Point(41, 197);
             label3.Name = "label3";
@@ -67,13 +67,13 @@
             label3.TabIndex = 4;
             label3.Text = "Email";
 
-            // txtEmail
+           
             txtEmail.Location = new Point(211, 197);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(200, 39);
             txtEmail.TabIndex = 5;
 
-            // btnAdd
+            
             btnAdd.Location = new Point(446, 73);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(150, 46);
@@ -82,7 +82,7 @@
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
 
-            // btnUpdate
+            
             btnUpdate.Location = new Point(602, 73);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(150, 46);
@@ -91,7 +91,7 @@
             btnUpdate.UseVisualStyleBackColor = true;
             btnUpdate.Click += btnUpdate_Click;
 
-            // btnDelete
+           
             btnDelete.Location = new Point(758, 73);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(141, 46);
@@ -100,7 +100,7 @@
             btnDelete.UseVisualStyleBackColor = true;
             btnDelete.Click += btnDelete_Click;
 
-            // dgvSuppliers
+            
             dgvSuppliers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSuppliers.Location = new Point(12, 443);
             dgvSuppliers.Name = "dgvSuppliers";
@@ -109,7 +109,7 @@
             dgvSuppliers.TabIndex = 9;
             dgvSuppliers.CellClick += dgvSuppliers_CellClick;
 
-            // SupplierForm
+           
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1836, 883);
