@@ -24,4 +24,4 @@
         public Supplier? Supplier { get; set; }
         
     }
-}
+}// pr cs done
