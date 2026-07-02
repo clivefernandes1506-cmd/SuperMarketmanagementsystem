@@ -34,4 +34,4 @@ namespace SuperMarketmanagementsystem.Services
             _context.SaveChanges();
         }
     }
-}
+}//category service done
