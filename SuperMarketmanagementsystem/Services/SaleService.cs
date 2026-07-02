@@ -40,4 +40,4 @@ namespace SuperMarketmanagementsystem.Services
             _context.SaveChanges();
         }
     }
-}
+}//Sale service done
