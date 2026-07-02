@@ -34,7 +34,7 @@ namespace SuperMarketmanagementsystem.Forms
         {
             if (string.IsNullOrWhiteSpace(txtCategoryName.Text))
             {
-                MessageBox.Show("Please enter a category name.");
+                MessageBox.Show("Please enter a category name.");//will show msg when want to put in details
                 return;
             }
 
@@ -107,7 +107,7 @@ namespace SuperMarketmanagementsystem.Forms
             }
         }
 
-        private void dgvCategories_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvCategories_CellClick(object sender, DataGridViewCellEventArgs e)// data grid view 
         {
             if (e.RowIndex >= 0)
             {
