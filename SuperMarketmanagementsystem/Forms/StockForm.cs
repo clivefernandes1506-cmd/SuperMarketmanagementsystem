@@ -10,7 +10,7 @@ namespace SuperMarketmanagementsystem.Forms
         private readonly StockService _stockService;
         private readonly ProductService _productService;
 
-        public StockForm()
+        public StockForm()//Stockform 
         {
             InitializeComponent();
 
