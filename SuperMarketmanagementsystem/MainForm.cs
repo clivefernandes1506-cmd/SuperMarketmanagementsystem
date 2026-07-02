@@ -5,7 +5,7 @@ namespace SuperMarketmanagementsystem.Forms
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        public MainForm()//MainForm done
         {
             InitializeComponent();
         }
