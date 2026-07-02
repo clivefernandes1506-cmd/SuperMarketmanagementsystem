@@ -17,7 +17,7 @@ namespace SuperMarketmanagementsystem.Forms
 
         private void SupplierForm_Load(object sender, EventArgs e)
         {
-            LoadSuppliers();
+            LoadSuppliers();//Suppkierform
         }
 
         private void LoadSuppliers()
