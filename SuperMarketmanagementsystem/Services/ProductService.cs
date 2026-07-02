@@ -76,5 +76,5 @@ namespace SuperMarketmanagementsystem.Services
                 .ToList();
         }
     }
-}
+}//product service done
 
