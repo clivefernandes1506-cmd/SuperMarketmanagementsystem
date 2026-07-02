@@ -24,7 +24,7 @@ namespace SuperMarketmanagementsystem.Forms
             InitializeComponent();
             _ProductService = new ProductService();
             _CategoryService = new CategoryService();
-            _SupplierService = new SupplierService();
+            _SupplierService = new SupplierService();//Product
 
         }
 
