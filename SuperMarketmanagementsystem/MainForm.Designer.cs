@@ -25,7 +25,7 @@
             btnExit = new Button();
             SuspendLayout();
 
-            // lblTitle
+            
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblTitle.Location = new Point(180, 40);
@@ -34,7 +34,7 @@
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Supermarket System";
 
-            // btnProducts
+            
             btnProducts.Location = new Point(250, 140);
             btnProducts.Name = "btnProducts";
             btnProducts.Size = new Size(250, 50);
@@ -43,7 +43,7 @@
             btnProducts.UseVisualStyleBackColor = true;
             btnProducts.Click += btnProducts_Click;
 
-            // btnCategories
+           
             btnCategories.Location = new Point(250, 210);
             btnCategories.Name = "btnCategories";
             btnCategories.Size = new Size(250, 50);
@@ -52,7 +52,7 @@
             btnCategories.UseVisualStyleBackColor = true;
             btnCategories.Click += btnCategories_Click;
 
-            // btnSuppliers
+            
             btnSuppliers.Location = new Point(250, 280);
             btnSuppliers.Name = "btnSuppliers";
             btnSuppliers.Size = new Size(250, 50);
@@ -61,7 +61,7 @@
             btnSuppliers.UseVisualStyleBackColor = true;
             btnSuppliers.Click += btnSuppliers_Click;
 
-            // btnStock
+            
             btnStock.Location = new Point(250, 350);
             btnStock.Name = "btnStock";
             btnStock.Size = new Size(250, 50);
@@ -70,7 +70,7 @@
             btnStock.UseVisualStyleBackColor = true;
             btnStock.Click += btnStock_Click;
 
-            // btnSales
+            
             btnSales.Location = new Point(250, 420);
             btnSales.Name = "btnSales";
             btnSales.Size = new Size(250, 50);
@@ -79,7 +79,7 @@
             btnSales.UseVisualStyleBackColor = true;
             btnSales.Click += btnSales_Click;
 
-            // btnExit
+            
             btnExit.Location = new Point(250, 490);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(250, 50);
@@ -88,7 +88,7 @@
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click;
 
-            // MainForm
+            
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 620);
