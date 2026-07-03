@@ -31,9 +31,7 @@
             label1 = new Label();
             txtProductName = new TextBox();
             label2 = new Label();
-            label3 = new Label();
             txtPrice = new TextBox();
-            txtStock = new TextBox();
             label4 = new Label();
             cmbCategory = new ComboBox();
             label5 = new Label();
@@ -78,15 +76,6 @@
             label2.TabIndex = 3;
             label2.Text = "Price :";
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(6, 153);
-            label3.Name = "label3";
-            label3.Size = new Size(83, 32);
-            label3.TabIndex = 4;
-            label3.Text = "Stock :";
-            // 
             // txtPrice
             // 
             txtPrice.Location = new Point(83, 98);
@@ -94,17 +83,10 @@
             txtPrice.Size = new Size(200, 39);
             txtPrice.TabIndex = 5;
             // 
-            // txtStock
-            // 
-            txtStock.Location = new Point(83, 153);
-            txtStock.Name = "txtStock";
-            txtStock.Size = new Size(200, 39);
-            txtStock.TabIndex = 6;
-            // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 211);
+            label4.Location = new Point(6, 166);
             label4.Name = "label4";
             label4.Size = new Size(122, 32);
             label4.TabIndex = 7;
@@ -113,7 +95,7 @@
             // cmbCategory
             // 
             cmbCategory.FormattingEnabled = true;
-            cmbCategory.Location = new Point(128, 211);
+            cmbCategory.Location = new Point(134, 166);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(242, 40);
             cmbCategory.TabIndex = 8;
@@ -121,7 +103,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 280);
+            label5.Location = new Point(14, 238);
             label5.Name = "label5";
             label5.Size = new Size(114, 32);
             label5.TabIndex = 9;
@@ -130,14 +112,14 @@
             // cmbSupplier
             // 
             cmbSupplier.FormattingEnabled = true;
-            cmbSupplier.Location = new Point(120, 280);
+            cmbSupplier.Location = new Point(134, 230);
             cmbSupplier.Name = "cmbSupplier";
             cmbSupplier.Size = new Size(242, 40);
             cmbSupplier.TabIndex = 10;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(12, 350);
+            btnAdd.Location = new Point(6, 309);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(150, 46);
             btnAdd.TabIndex = 11;
@@ -147,7 +129,7 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(168, 350);
+            btnUpdate.Location = new Point(181, 309);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(150, 46);
             btnUpdate.TabIndex = 12;
@@ -157,7 +139,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(324, 350);
+            btnDelete.Location = new Point(349, 309);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(150, 46);
             btnDelete.TabIndex = 13;
@@ -167,7 +149,7 @@
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(480, 350);
+            btnSearch.Location = new Point(517, 309);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(150, 46);
             btnSearch.TabIndex = 14;
@@ -178,7 +160,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(12, 423);
+            label6.Location = new Point(12, 387);
             label6.Name = "label6";
             label6.Size = new Size(186, 32);
             label6.TabIndex = 15;
@@ -186,7 +168,7 @@
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(192, 420);
+            txtSearch.Location = new Point(205, 380);
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(200, 39);
             txtSearch.TabIndex = 16;
@@ -252,9 +234,7 @@
             Controls.Add(label5);
             Controls.Add(cmbCategory);
             Controls.Add(label4);
-            Controls.Add(txtStock);
             Controls.Add(txtPrice);
-            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(txtProductName);
             Controls.Add(label1);
@@ -271,9 +251,7 @@
         private Label label1;
         private TextBox txtProductName;
         private Label label2;
-        private Label label3;
         private TextBox txtPrice;
-        private TextBox txtStock;
         private Label label4;
         private ComboBox cmbCategory;
         private Label label5;
