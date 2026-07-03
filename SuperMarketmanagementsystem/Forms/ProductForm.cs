@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,15 +19,15 @@ namespace SuperMarketmanagementsystem.Forms
         private readonly ProductService _ProductService;
         private readonly CategoryService _CategoryService;
         private readonly SupplierService _SupplierService;
+
         public ProductForm()
         {
             InitializeComponent();
+
             _ProductService = new ProductService();
             _CategoryService = new CategoryService();
-            _SupplierService = new SupplierService();//Product
-
+            _SupplierService = new SupplierService();
         }
-
 
         private void txtProductName_TextChanged(object sender, EventArgs e)
         {
@@ -39,23 +39,25 @@ namespace SuperMarketmanagementsystem.Forms
             Loadproducts();
             LoadCategories();
             LoadSuppliers();
-
-
-
         }
+
         private void Loadproducts()
         {
             var products = _ProductService.GetAllProducts();
+
             dgvProducts.DataSource = products;
+
             dgvProducts.Columns["ProductID"].Visible = false;
             dgvProducts.Columns["CategoryID"].Visible = false;
             dgvProducts.Columns["SupplierID"].Visible = false;
             dgvProducts.Columns["Category"].Visible = false;
             dgvProducts.Columns["Supplier"].Visible = false;
         }
+
         private void LoadCategories()
         {
             var categories = _CategoryService.GetAllCategories();
+
             cmbCategory.DataSource = categories;
             cmbCategory.DisplayMember = "CategoryName";
             cmbCategory.ValueMember = "CategoryID";
@@ -64,31 +66,38 @@ namespace SuperMarketmanagementsystem.Forms
         private void LoadSuppliers()
         {
             var suppliers = _SupplierService.GetAllSuppliers();
+
             cmbSupplier.DataSource = suppliers;
             cmbSupplier.DisplayMember = "SupplierName";
             cmbSupplier.ValueMember = "SupplierID";
         }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             var product = new Product
             {
                 Title = txtProductName.Text,
                 Price = decimal.Parse(txtPrice.Text),
-                Barcode = Barcode.Text,
+                Barcode = txtBarcode.Text,
                 ExpiryDate = dtpExpiryDate.Value,
                 CategoryID = Convert.ToInt32(cmbCategory.SelectedValue),
                 SupplierID = Convert.ToInt32(cmbSupplier.SelectedValue),
             };
+
             _ProductService.AddProduct(product);
+
             Loadproducts();
             ClearForm();
         }
+
         private void ClearForm()
         {
             txtProductName.Clear();
             txtPrice.Clear();
             txtBarcode.Clear();
-            dtpExpiryDate = new DateTimePicker();
+
+            dtpExpiryDate.Value = DateTime.Now;
+
             cmbCategory.SelectedIndex = -1;
             cmbSupplier.SelectedIndex = -1;
         }
@@ -115,8 +124,6 @@ namespace SuperMarketmanagementsystem.Forms
             ClearForm();
         }
 
-
-
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (dgvProducts.CurrentRow == null)
@@ -129,22 +136,43 @@ namespace SuperMarketmanagementsystem.Forms
             if (product != null)
             {
                 _ProductService.DeleteProduct(product);
+
                 Loadproducts();
                 ClearForm();
             }
         }
 
+        private void dgvProducts_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                txtProductName.Text =
+                    dgvProducts.Rows[e.RowIndex].Cells["Title"].Value.ToString();
+
+                txtPrice.Text =
+                    dgvProducts.Rows[e.RowIndex].Cells["Price"].Value.ToString();
+
+                txtBarcode.Text =
+                    dgvProducts.Rows[e.RowIndex].Cells["Barcode"].Value.ToString();
+
+                dtpExpiryDate.Value =
+                    Convert.ToDateTime(dgvProducts.Rows[e.RowIndex].Cells["ExpiryDate"].Value);
+
+                cmbCategory.SelectedValue =
+                    dgvProducts.Rows[e.RowIndex].Cells["CategoryID"].Value;
+
+                cmbSupplier.SelectedValue =
+                    dgvProducts.Rows[e.RowIndex].Cells["SupplierID"].Value;
+            }
+        }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string searchTerm = txtSearch.Text.Trim();
+
             var products = _ProductService.SearchProducts(searchTerm);
+
             dgvProducts.DataSource = products;
-
-
         }
     }
 }
-
-
-
